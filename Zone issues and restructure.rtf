@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red22\green21\blue22;\red18\green79\blue146;}
+{\*\expandedcolortbl;;\cssrgb\c11373\c10980\c11373;\cssrgb\c7059\c39216\c63922;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid3\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ryan\'a0\'a0[10:11 PM]\
+[brainstorm] I've been trying to think about how to articulate my take on Routing's current situation and Vince's frustration that surfaced during yesterday's meeting. I don't have a single conclusion and wanted to share my thoughts:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa40\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 We have had multiple load balancing exercises to bring in temporary capacity onto Routing over the past 2 quarters. That has only ramped up as ICs (Dev and Emma) have left and the number of support tickets and features bottlenecked by Routing have increased. In combination with Kevin and Magaly, this has probably resulted in undue burden on Vince to onboard individuals.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa40\partightenfactor0
+\ls1\ilvl1\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 A secondary exacerbating effect is the dissonance between ICs and leadership (mostly in the past):\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sa40\partightenfactor0
+\ls1\ilvl2\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9642 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Tenured(?) ICs: There is significant complexity and gaps in the system that are difficult to understand, especially without fully understanding the system. The push to deliver support tickets (repl scripts to do an action) and client features have exacerbated the problem by forcing action without knowing the system.\
+\ls1\ilvl2\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9642 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Leadership: There is a capacity gap in Routing, therefore the solution from leadership is piling more ICs onto the team to address the capacity gap.\
+\ls1\ilvl2\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9642 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Note: This latest iteration is the first where I have felt significant understanding from leadership that a strong IC without SME does not directly equate to bolstering Routing capacity.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa40\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The push to continue addressing support tickets and pushing out client features means that we are intentionally accepting a degraded state of the system. This is both in terms of system functionality and safeguards as well as the integrity of the data. For senior+ engineers who understand the problem, this is problematic.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa40\partightenfactor0
+\ls1\ilvl1\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 When going over the {\field{\*\fldinst{HYPERLINK "https://github.com/datavant/idsb/pull/38836"}}{\fldrslt \cf3 \strokec3 script}} Vince is iterating on yesterday, we both acknowledged that the extent of the problem is worse than either of us had realized.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa40\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 There has been dissonance between the push to solve for support burden as the top priority while deprioritizing fixing the system. An example is the reroutes project where the push (before we reset this week) was to automate and remove the engineer from the loop, rather than solving the underlying problems. The impact is that we spend a lot of time educating, speccing for handoff, and talking about the problem rather than addressing the problem.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 There has been a perception (from Product) that Routing is unwilling to accept help from others. My take is that this comes from the pushback (both Vince and I) on onboarding ICs who don't have context and counting that as a "successful mitigation" of capacity problems.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa40\partightenfactor0
+\ls1\ilvl1\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 I am directly working to correct this perception but sharing for awareness.\
+\pard\pardeftab720\partightenfactor0
+\cf2 Matt Syp\'a0\'a0[8:23 AM]\
+I'm going to chew on this between now and our 1:1. I definitely see what you are saying in limited doses so far, but if I can understand what you're talking about in 2 weeks, I'm sure the longer I go the more I'll see.\
+\
+Matt Syp\'a0\'a0[4:37 PM]\
+This isn't a direct response to above, but it is what I have been thinking about and above had some influence on it along with our talk and my talk with Adi today.\
+\
+Zone restructure, now vs later.\
+\
+The routing team has definitely seen its share of chaos with attrition and possibly the wrong people being in the wrong positions. With Sophie thinking about going back to being an IC, I think this gives us a chance to do a small restructure while we really think about what this zone should be. Do we combine the teams outright? I don't know if that is the right call. She has mostly P3s under her, plus a sr and a staff.\
+\
+I think there is a different path for 2026. I was talking about the routing team needing to be a bit more stacked so I think a smart move would be to review the engineers on both of our teams, choose who would fit best on routing, and then provide some resources to other teams.I still think we bring in a P4 from the outside, especially if Charles is that person because one thing I have seen is most people who have been here a bit have some baggage. We need to respect that, but also try to mitigate it at the same time.\
+\
+We use Sophie moving back to IC as the catalyst for the 2026 change. Then for 2027, we let everyone know that we are going to be really trying to understand the work that is coming along with what we currently have and see if we should make some larger changes for 2027. This will let everyone know we are handling our current events respectfully and then really putting effort into what this zone looks like in the next 18-24 months.\
+\
+A few things this does in my mind. First, it helps Vince get some people he trusts next to him. It gives anyone who isn't familiar with what the team owns more people to go to so we don't continue to concentrate around Vince. And we bring in some fresh people who can see things with clear eyes who can give us some longevity that people who are carrying baggage might not. If we pull it off, we get some quick wins when it comes to the keystone blockers, and derisk the zone. Hopefully that also comes with people who have been here seeing positive changes and possibly giving us more time with them.\
+\
+100% not fully thought out, but I wanted to make sure you could noodle on it.a bit while I continue thinking as well.\
+}
