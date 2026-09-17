@@ -79,3 +79,28 @@ Okay, so another week down, time to start talking about what happened this week.
 
 1_1 Ryan and Matt.md (specifically the Sep 4, 2026 entry)
 
+# Week 5 Prompts
+
+## Prompt 1 - 3 Week SWOT
+
+For week 4 I provided a SWOT document for the routing team which I'm attaching. I'll add more documents for week 5 and give an update. Let me know when you are ready
+
+### Files
+
+./Weeks/20260907/Routing Pod_Three-Week Readout.pdf
+
+## Prompt 2 - Escalation Process Docs
+
+The week 5 documents so far are around the design of a support escalation process. I'm trying to smooth it out and provide clear ownership of who owns what. So I'm attaching 3 documents. The 2 images are diagrams of the high level process workflow and the Jira status workflow. The pdf is a document that starts to explain the process. Once you have this context I'll provide an update of week 4 and partial week 5.
+
+### Files
+
+./Weeks/20260914/Escalation Process.pdf
+./Weeks/20260914/Support Process - Escalation Process.png
+./Weeks/20260914/Support Process - Escalation Workflow.png
+
+## Prompt 3 - Pre-Adi/Russell Discussion Updates
+
+Okay, so week four, continued to understand the issues and starting designing processes around them, including onboarding. I have not uploaded that document yet. It is not ready, but kind of brought the onboarding stuff, started creating the sessions, helping to spread knowledge to new people. The other thing about week four is we were talking about maybe some organization changes, how Sophie wanted to go back to being an IC, so the pipelines team was going to need a new EM. The idea was either to combine the routing and pipelines team, or for me to just take over both. So that was some discussions that was happening in week four. Starting week five, I got told by Ryan that they were having conversations and that kind of midweek they would understand what it was going to look like. So yesterday I had a conversation with him, and the idea is that Tim, who was the temporary routing EM, is going to take over routing, and I'm going to take over pipelines. So no combination. I'm going to be moving teams. So pretty much everything that I've figured out about the routing team, I'm going to hand over to Tim and just kind of let it go and start over with the pipelines team. Today I'm having a discussion with Russell, who is going to be the new director over these zones. Ryan is moving back to a IC position as a principal engineer. And so my discussions today are going to be with Russell, who's the director, and Adi, who is the senior VP, just to understand what this looks like. Once I figure that out, I will upload all my notes and everything here, and we can figure that out. But as it stands right now, probably starting next week, I'm going to be EM of a different team, and I don't know exactly what that looks like yet.
+
+
