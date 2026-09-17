@@ -103,4 +103,11 @@ The week 5 documents so far are around the design of a support escalation proces
 
 Okay, so week four, continued to understand the issues and starting designing processes around them, including onboarding. I have not uploaded that document yet. It is not ready, but kind of brought the onboarding stuff, started creating the sessions, helping to spread knowledge to new people. The other thing about week four is we were talking about maybe some organization changes, how Sophie wanted to go back to being an IC, so the pipelines team was going to need a new EM. The idea was either to combine the routing and pipelines team, or for me to just take over both. So that was some discussions that was happening in week four. Starting week five, I got told by Ryan that they were having conversations and that kind of midweek they would understand what it was going to look like. So yesterday I had a conversation with him, and the idea is that Tim, who was the temporary routing EM, is going to take over routing, and I'm going to take over pipelines. So no combination. I'm going to be moving teams. So pretty much everything that I've figured out about the routing team, I'm going to hand over to Tim and just kind of let it go and start over with the pipelines team. Today I'm having a discussion with Russell, who is going to be the new director over these zones. Ryan is moving back to a IC position as a principal engineer. And so my discussions today are going to be with Russell, who's the director, and Adi, who is the senior VP, just to understand what this looks like. Once I figure that out, I will upload all my notes and everything here, and we can figure that out. But as it stands right now, probably starting next week, I'm going to be EM of a different team, and I don't know exactly what that looks like yet.
 
+## Prompt 4 - Post Adi/Russell Discussion Updates
+
+I updated my onboarding notes with the discussions I had today with Fidan (Director of Product), Russell and Adi. All in all, it went very well. I'm being seen as the Sr. most EM in the new zone and are going to be expected to help rise the bar along with running the pipelines team. So a lot of what we talked about as being the reason Ryan hired me, it still seems relevant.
+
+### Files
+
+./Weeks/20260914/Onboarding Notes.md
 
