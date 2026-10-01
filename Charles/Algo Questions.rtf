@@ -1,0 +1,211 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2907
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red15\green112\blue1;\red255\green255\blue255;\red0\green0\blue0;
+\red0\green0\blue255;\red101\green76\blue29;\red0\green0\blue109;\red157\green0\blue210;\red144\green1\blue18;
+\red19\green118\blue70;}
+{\*\expandedcolortbl;;\cssrgb\c0\c50196\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+\cssrgb\c0\c0\c100000;\cssrgb\c47451\c36863\c14902;\cssrgb\c0\c6275\c50196;\cssrgb\c68627\c0\c85882;\cssrgb\c63922\c8235\c8235;
+\cssrgb\c3529\c52549\c34510;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ### Q1\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # One Rotation\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # hello->elloh\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # A Second, Followup Rotation\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # elloh->llohe\cf0 \cb1 \strokec4 \
+\
+\cf2 \cb3 \strokec2 # Rotation examples:\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "ippocratesh"\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "ppocrateshi"\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "shippocrate", "hippocrates"\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrateseee", "eeehippocrates"\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "abaab", "baaba"\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "hippocrates"\cf0 \cb1 \strokec4 \
+\
+\cf2 \cb3 \strokec2 # Not-Rotation examples:\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "fleming"\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "hipopcrates"        # This one is an anagram but not a rotation\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "abcd", "abab"                      # This one catches the mistake of only checking substrings of splits\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "abab", "abcd"                      # ^ same but reversed  \cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "hippocratesh"       # This one has an extra 'h' at the end\cf0 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 # "hippocrates", "h"                  # This one is a substring but not a rotation\cf0 \cb1 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 def\cf0 \strokec4  \cf6 \strokec6 is_rotation\cf0 \strokec4 (\cf7 \strokec7 s1\cf0 \strokec4 , \cf7 \strokec7 s2\cf0 \strokec4 ):\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf8 \strokec8 pass\cf0 \cb1 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (\cf9 \strokec9 "TRUE"\cf0 \strokec4 )\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "ippocratesh"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "ppocrateshi"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "shippocrate"\cf0 \strokec4 , \cf9 \strokec9 "hippocrates"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrateseee"\cf0 \strokec4 , \cf9 \strokec9 "eeehippocrates"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "abaab"\cf0 \strokec4 , \cf9 \strokec9 "baaba"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "hippocrates"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "abacd"\cf0 \strokec4 , \cf9 \strokec9 "acdab"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "dbdca"\cf0 \strokec4 , \cf9 \strokec9 "dcadb"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (\cf9 \strokec9 "---"\cf0 \strokec4 )\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (\cf9 \strokec9 "FALSE"\cf0 \strokec4 )\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "fleming"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "hipopcrates"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "hipppocrates"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "abcd"\cf0 \strokec4 , \cf9 \strokec9 "abab"\cf0 \strokec4  ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "abab"\cf0 \strokec4 , \cf9 \strokec9 "abcd"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "hipopcratesh"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "hippocrates"\cf0 \strokec4 , \cf9 \strokec9 "h"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "h"\cf0 \strokec4 , \cf9 \strokec9 "hippocrates"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (is_rotation(\cf9 \strokec9 "abcadce"\cf0 \strokec4 , \cf9 \strokec9 "adcabce"\cf0 \strokec4 ))\cb1 \
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ### Q2\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 def\cf0 \strokec4  \cf6 \strokec6 thing\cf0 \strokec4 (\cf7 \strokec7 s1\cf0 \strokec4 ):\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf8 \strokec8 pass\cf0 \cb1 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 def\cf0 \strokec4  \cf6 \strokec6 is_rotation\cf0 \strokec4 (\cf7 \strokec7 string_one\cf0 \strokec4 , \cf7 \strokec7 string_two\cf0 \strokec4 ):\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf8 \strokec8 return\cf0 \strokec4  thing(string_one) == thing(string_two)\cb1 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ### Q3\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 def\cf0 \strokec4  \cf6 \strokec6 move_element\cf0 \strokec4 (\cf7 \strokec7 arr\cf0 \strokec4 , \cf7 \strokec7 from_index\cf0 \strokec4 , \cf7 \strokec7 to_index\cf0 \strokec4 ):\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf8 \strokec8 pass\cf0 \cb1 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 # Starter Case\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 test_array = [\cf9 \strokec9 "red"\cf0 \strokec4 , \cf9 \strokec9 "orange"\cf0 \strokec4 , \cf9 \strokec9 "yellow"\cf0 \strokec4 , \cf9 \strokec9 "green"\cf0 \strokec4 , \cf9 \strokec9 "blue"\cf0 \strokec4 , \cf9 \strokec9 "indigo"\cf0 \strokec4 , \cf9 \strokec9 "violet"\cf0 \strokec4 ]\cb1 \
+\cb3 move_element(test_array, \cf10 \strokec10 1\cf0 \strokec4 , \cf10 \strokec10 4\cf0 \strokec4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (test_array)\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (test_array == [\cf9 \strokec9 "red"\cf0 \strokec4 , \cf9 \strokec9 "yellow"\cf0 \strokec4 , \cf9 \strokec9 "green"\cf0 \strokec4 , \cf9 \strokec9 "blue"\cf0 \strokec4 , \cf9 \strokec9 "orange"\cf0 \strokec4 , \cf9 \strokec9 "indigo"\cf0 \strokec4 , \cf9 \strokec9 "violet"\cf0 \strokec4 ])\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 # Full Cases\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 icd_codes = [\cb1 \
+\cb3     \cf9 \strokec9 "S06.0x1A"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "G44.311"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "M54.2"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "M99.01"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "W20.8xxA"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Y93.g3"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Y92.010"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "I25.110"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "T46.1x5A"\cf0 \strokec4 ,\cb1 \
+\cb3 ]\cb1 \
+\cb3 move_element(icd_codes, \cf10 \strokec10 2\cf0 \strokec4 , \cf10 \strokec10 5\cf0 \strokec4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (icd_codes)\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     icd_codes\cb1 \
+\cb3     == [\cb1 \
+\cb3         \cf9 \strokec9 "S06.0x1A"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "G44.311"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "M99.01"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "W20.8xxA"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Y93.g3"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "M54.2"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Y92.010"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "I25.110"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "T46.1x5A"\cf0 \strokec4 ,\cb1 \
+\cb3     ]\cb1 \
+\cb3 )\cb1 \
+\
+\
+\cb3 physician_specialities = [\cb1 \
+\cb3     \cf9 \strokec9 "Allergy and immunology"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Anesthesiology"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Dermatology"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Diagnostic radiology"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Emergency medicine"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Family medicine"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Internal medicine"\cf0 \strokec4 ,\cb1 \
+\cb3     \cf9 \strokec9 "Medical genetics"\cf0 \strokec4 ,\cb1 \
+\cb3 ]\cb1 \
+\cb3 move_element(physician_specialities, \cf10 \strokec10 5\cf0 \strokec4 , \cf10 \strokec10 2\cf0 \strokec4 )\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (physician_specialities)\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     physician_specialities \cb1 \
+\cb3     == [\cb1 \
+\cb3         \cf9 \strokec9 "Allergy and immunology"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Anesthesiology"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Family medicine"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Dermatology"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Diagnostic radiology"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Emergency medicine"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Internal medicine"\cf0 \strokec4 ,\cb1 \
+\cb3         \cf9 \strokec9 "Medical genetics"\cf0 \strokec4 ,\cb1 \
+\cb3     ]\cb1 \
+\cb3 )\cb1 \
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 ### Q4\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 grid = [\cb1 \
+\cb3 [\cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'D'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'S'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'B'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'X'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'Z'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 , \cf9 \strokec9 'U'\cf0 \strokec4 ],\cb1 \
+\cb3 [\cf9 \strokec9 'V'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'N'\cf0 \strokec4 , \cf9 \strokec9 'Q'\cf0 \strokec4 , \cf9 \strokec9 'E'\cf0 \strokec4 , \cf9 \strokec9 'R'\cf0 \strokec4 , \cf9 \strokec9 'Y'\cf0 \strokec4 , \cf9 \strokec9 'C'\cf0 \strokec4 , \cf9 \strokec9 'L'\cf0 \strokec4 , \cf9 \strokec9 'H'\cf0 \strokec4 , \cf9 \strokec9 'M'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'O'\cf0 \strokec4 , \cf9 \strokec9 'W'\cf0 \strokec4 , \cf9 \strokec9 'I'\cf0 \strokec4 , \cf9 \strokec9 'A'\cf0 \strokec4 , \cf9 \strokec9 'T'\cf0 \strokec4 , \cf9 \strokec9 'J'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 , \cf9 \strokec9 'K'\cf0 \strokec4 , \cf9 \strokec9 'P'\cf0 \strokec4 , \cf9 \strokec9 'F'\cf0 \strokec4 , \cf9 \strokec9 'G'\cf0 \strokec4 ]\cb1 \
+\cb3 ]\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3 \strokec5 def\cf0 \strokec4  \cf6 \strokec6 word_searcher\cf0 \strokec4 (\cf7 \strokec7 grid\cf0 \strokec4 , \cf7 \strokec7 word_to_find\cf0 \strokec4 ):\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf8 \strokec8 pass\cf0 \cb1 \strokec4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "ANESTHESIOLOGY"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "DATA"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "DATAVANT"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "DERMATOLOGY"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "HIPPA"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "PRIVACY"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "HEALTH CARE"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "HIPPA"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "INFORMATION"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "LIFE SCIENCES"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "PATIENT"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "PRIVACY"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "RHEUMATOLOGY"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "TRIALS"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (\cf9 \strokec9 "------"\cf0 \strokec4 )\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "INTERNAL MEDICINE"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "SILOS"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "STAR WARS"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "PUPPY"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "CAMEL"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "CALIFORNIA"\cf0 \strokec4 ))\cb1 \
+\cf6 \cb3 \strokec6 print\cf0 \strokec4 (word_searcher(grid, \cf9 \strokec9 "CHUCKEE CHEESE"\cf0 \strokec4 ))\cb1 \
+}
